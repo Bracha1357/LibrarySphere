@@ -1,0 +1,151 @@
+/* styling the background */
+body{
+  background-image: linear-gradient(30deg, rgb(252, 145, 163), blue);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin: 0;
+}
+
+/* font for the title and slogan */
+.newams{
+  font-family: 'New Amsterdam', sans-serif;
+}
+
+/* font for the getting started */
+.cav {
+  font-family: 'Caveat', sans-serif;
+}
+
+/* styling the input boxes */
+.black {
+  background-color: black ;
+  color: white;
+}
+.black::placeholder{
+  color: white;
+  opacity: 1;
+}
+
+.black:focus{
+  background-color: black ;
+  color: white;
+  box-shadow: none;
+}
+
+/* styling the button Find Your Library */
+.btn-dark:hover, .btn-dark:focus {
+  box-shadow: 0 0 15px white;
+  border-color: white; 
+  background-color: black;
+  outline: none; 
+}
+
+/* Container for the entire layout */
+.container-fluid {
+  position: relative;
+  height: 100vh; /* Full viewport height */
+  padding: 0; /* Remove default padding */
+}
+
+/* Side images container */
+.side-images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 200px; /* Fixed width for side images */
+  max-width: 200px; /* Ensure maximum width is 200px */
+  overflow: hidden; /* Hide overflow */
+}
+
+/* Positioning for the left and right sides */
+.left-side {
+  left: 0;
+}
+
+.right-side {
+  right: 0;
+}
+
+/* Image styling to maintain square aspect ratio */
+.side-images img {
+  width: 100%; /* Full width of container */
+  aspect-ratio: 1 / 1; /* Ensures the height equals the width */
+  object-fit: cover; /* Ensure the image covers the area without distortion */
+  margin-bottom: 1rem; /* Space between images */
+}
+
+/* Main content styling */
+.main-content {
+  position: relative;
+  z-index: 1;
+  margin-left: 200px; /* Space for left-side images */
+  margin-right: 200px; /* Space for right-side images */
+  padding: 2rem; /* Padding around content */
+}
+
+.square {
+  width: 200px;
+  height: 200px;
+  background-color: black;
+  color: rgb(189, 109, 186);
+  border: none;
+  border-radius: 10px;
+}
+
+
+.square:hover, .square:focus {
+background-color: rgb(189, 109, 186);
+color: black;
+}
+
+.custom-container {
+  max-width: 1200px; /* Adjust based on your design requirements */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.input-group-text {
+  background-color: black;
+}
+
+.input-group-text:hover {
+  cursor: pointer;
+  
+}
+
+/* for the seach by members */
+.input-group-text {
+  background-color: #fff; /* Ensure the background is white */
+  border: 1px solid #ced4da; /* Border color matching Bootstrap's form-control */
+}
+#black {
+  background-color: black;
+}
+
+table {
+  border-collapse: separate; 
+  width: 100%;
+  border-radius: 10px;
+}
+
+table, th, td {
+  border: 1px solid black; /* Adds a 1px black border */
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+
+#search-bar {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+#rounded{
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
